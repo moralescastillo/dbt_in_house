@@ -1,0 +1,15 @@
+version: 2
+
+
+sources:
+  - name: my_source_schema
+    schema: sandbox
+    tables:
+      - name: my_source_table
+        identifier: spotify_artist
+      - name: spotify_artist
+  - name: bigquery
+    schema: sandbox
+    tables:
+      - name: spotify_album
+      - name: spotify_artist
