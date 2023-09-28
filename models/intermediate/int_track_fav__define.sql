@@ -18,7 +18,7 @@ group by
 SELECT
     track_id,
     case 
-    when freq > 50 
+    when freq > {{ var('fav_cut_off') }}
     then true
     else false 
     end as if_favorite

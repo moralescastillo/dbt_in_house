@@ -35,3 +35,11 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+vars:
+  # this is the number of times a track needs to be played in order to become a favorite track
+  fav_cut_off: 50
+  # favorite artist name
+  fav_artist_name: 'Kendrick Lamar'
+  # favorite album date release
+  fav_album_date: '2000-01-01'
