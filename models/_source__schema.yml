@@ -13,3 +13,4 @@ sources:
     tables:
       - name: spotify_album
       - name: spotify_artist
+      - name: lastfm_play_history
