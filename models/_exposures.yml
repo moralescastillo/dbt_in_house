@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+  - name: my_play_history_dashboard
+    url: https://app.bitool.com/my_play_history
+    type: dashboard
+    tags: ['hourly']
+    description: >
+      This dashboard shows the songs I have listened to in a
+      given time frame. It depends on data from tables dim_track
+      and fct_play_history.
+      
+    depends_on:
+      - ref('dim_track')
+      - ref('fct_play_history')
+    
+    owner:
+      name: paulo
+      email: hello@paulomoralescastillo.com
