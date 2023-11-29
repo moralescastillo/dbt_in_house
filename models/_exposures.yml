@@ -11,6 +11,7 @@ exposures:
       and fct_play_history.
       
     depends_on:
+      - ref('dim_album')
       - ref('dim_track')
       - ref('fct_play_history')
     
