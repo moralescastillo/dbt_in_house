@@ -7,8 +7,8 @@
 
 with v1 as (
 
-    select *,
-    1/0 test 
+    select *--,
+    --1/0 test 
     from 
     {{ ref('model_alpha') }}
     where 

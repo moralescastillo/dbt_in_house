@@ -12,5 +12,8 @@ sources:
     schema: sandbox
     tables:
       - name: spotify_album
+        tags: ['legacy']
+        config:
+          #enabled: false
       - name: spotify_artist
       - name: lastfm_play_history
