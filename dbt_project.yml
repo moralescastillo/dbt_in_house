@@ -32,9 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_in_house:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    greeks:
+      +tags: ['testing']
 
 vars:
   # this is the number of times a track needs to be played in order to become a favorite track
