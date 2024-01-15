@@ -1,6 +1,4 @@
 version: 2
-
-
 sources:
   - name: my_source_schema
     schema: sandbox
@@ -12,8 +10,21 @@ sources:
     schema: sandbox
     tables:
       - name: spotify_album
-        tags: ['legacy']
-        #config:
-          #enabled: false
+        tags:
+          - legacy
       - name: spotify_artist
       - name: lastfm_play_history
+models:
+  - name: dim_album
+    description: this is a dimensional model containing all album information
+    columns:
+      - name: artist_id
+        description: ""
+      - name: album_id
+        description: ""
+      - name: album_name
+        description: ""
+      - name: release_date
+        description: ""
+      - name: associated_artist
+        description: ""
